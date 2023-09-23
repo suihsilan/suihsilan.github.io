@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>上架Sui技術部落！</title>
+      <link href="/2023/09/23/my-first-blog-page/"/>
+      <url>/2023/09/23/my-first-blog-page/</url>
+      
+        <content type="html"><![CDATA[<h2 id="我自架的第一個部落格網站"><a href="#我自架的第一個部落格網站" class="headerlink" title="我自架的第一個部落格網站"></a>我自架的第一個部落格網站</h2><p>原本使用 coderbridge 來寫筆記，但走在轉職工程師的路上，應該要適時的練習指令，沒有自己的部落格似乎也說不過去，於是就試試看來上架部落格並且慢慢經營</p></br><h3 id="如何只顯示文章摘要：適用於-Butterfly-的主體"><a href="#如何只顯示文章摘要：適用於-Butterfly-的主體" class="headerlink" title="如何只顯示文章摘要：適用於 Butterfly 的主體"></a>如何只顯示文章摘要：適用於 Butterfly 的主體</h3><p>之前使用過 next 的主題，然後使用<code>&lt;!-- more --&gt;</code>就可以只顯示文章摘要，讀者有興趣再點選“閱讀更多”。</p><p>但在 butterfly 主題，這個指令是無效的。</p><p>於是我 google 之後，在另一篇部落格<a href="https://zsyyblog.com/4d31a8e4.html">竹山一葉</a>找到正解</p></br><h3 id="正解-index-post-content-修改-themes-butterfly-config-yml"><a href="#正解-index-post-content-修改-themes-butterfly-config-yml" class="headerlink" title="正解 index_post_content: 修改 themes &gt; butterfly &gt; _config.yml"></a>正解 index_post_content: 修改 themes &gt; butterfly &gt; <code>_config.yml</code></h3><p>找到在 butterfly 資料夾下的<code>_config.yml</code>這個檔案，可以打上 vscode 搜索字詞快捷鍵：cmd + f，<br>尋找關鍵字詞：｀ index_post_content ｀就可以在該檔案下找到這項設定了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Display the article introduction on homepage</span><br><span class="line"># 1: description</span><br><span class="line"># 2: both (if the description exists, it will show description, or show the auto_excerpt)</span><br><span class="line"># 3: auto_excerpt (default)</span><br><span class="line"># false: do not show the article introduction</span><br><span class="line">index_post_content:</span><br><span class="line">  method: 2</span><br><span class="line">  length: 500 # if you set method to 2 or 3, the length need to config</span><br></pre></td></tr></table></figure></br><h2 id="結尾：初出茅廬，一切不完美"><a href="#結尾：初出茅廬，一切不完美" class="headerlink" title="結尾：初出茅廬，一切不完美"></a>結尾：初出茅廬，一切不完美</h2><p>我會有完美主義，所以拖延症很嚴重，目前至少自己的部落格可以閱讀，就挺開心的，目前正在努力學習 React，我會抽空一點一滴地把這個自己的家搭建的更好！</p></br><hr><h3 id="指令複習"><a href="#指令複習" class="headerlink" title="指令複習"></a>指令複習</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$hexo clean</span><br><span class="line">$hexo generate</span><br><span class="line">$hexo server</span><br><span class="line">$hexo deploy</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
